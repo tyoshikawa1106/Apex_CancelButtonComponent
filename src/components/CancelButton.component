@@ -1,0 +1,6 @@
+<apex:component controller="CancelButtonController" id="cancelButtonComponent">
+	<apex:attribute name="cancelButtonLabel" type="String" assignTo="{!prmCancelButtonLabel}" description="cancelButtonLabel" />
+	<apex:attribute name="returnUrl" type="PageReference" assignTo="{!prmReturnUrl}" description="returnUrl" />
+	<apex:attribute name="reRenderArea" type="String" description="reRenderArea" />
+	<apex:commandButton value="{!prmCancelButtonLabel}" title="{!prmCancelButtonLabel}" action="{!doReturn}" reRender="{!reRenderArea}" id="cancelButton" />
+</apex:component>
