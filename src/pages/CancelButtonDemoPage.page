@@ -1,5 +1,5 @@
 <apex:page controller="CancelButtonDemoController" title="CancelButtonDemoPage" id="page">
 	<apex:form id="form">
-		<c:CancelButton cancelButtonLabel="CancelButton" returnUrl="{!returnUrl}" reRenderArea="{!$Component.form}" />
+		<c:CancelButton cancelButtonLabel="CancelButton" returnUrl="{!returnUrl}" reRenderArea="{!$Component.form}" id="c_cancelButton" />
 	</apex:form>
 </apex:page>

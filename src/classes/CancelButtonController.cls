@@ -13,6 +13,7 @@ public with sharing class CancelButtonController {
 	
 	public String prmCancelButtonLabel {get; set;}
 	public PageReference prmReturnUrl {get; set;}
+	
 	private static final PageReference DEFAULT_URL = new PageReference('/home/home.jsp');
 	
 	/*
@@ -28,7 +29,7 @@ public with sharing class CancelButtonController {
 	/*
 	 * 前ページ遷移
 	 * @param	: なし
-	 * @return	: 前ページURL
+	 * @return	: 遷移先URL
 	 */
 	public PageReference doReturn() {
 		return getReturnUrl(this.prmReturnUrl);
